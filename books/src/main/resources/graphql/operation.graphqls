@@ -1,0 +1,16 @@
+type Query {
+    findAllBooks: [Book]!
+    findBookById(id: ID): Book
+    countBooks: Int!
+
+    findAllAuthors: [Author]!
+    countAuthors: Int!
+}
+
+type Mutation {
+    saveBook(createBookInput: CreateBookInput!): Book!
+    deleteBook(id: ID): Boolean!
+    updateBookPageCount(updateBookPageCountInput: UpdateBookPageCountInput!): Book!
+
+    saveAuthor(createAuthorInput: CreateAuthorInput!): Author!
+}
