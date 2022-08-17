@@ -1,6 +1,6 @@
 package graphpl.books.exception;
 
-import graphql.ErrorClassification;
+import graphql.ErrorType;
 import graphql.ExceptionWhileDataFetching;
 import graphql.GraphQLError;
 import graphql.language.SourceLocation;
@@ -26,9 +26,10 @@ public class GraphQLErrorAdapter implements GraphQLError {
     }
 
     @Override
-    public ErrorClassification getErrorType() {
-        return error.getErrorType();
+    public ErrorType getErrorType() {
+        return null;
     }
+
 
     @Override
     public List<Object> getPath() {

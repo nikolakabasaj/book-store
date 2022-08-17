@@ -5,5 +5,5 @@ import lombok.Data;
 @Data
 public class CreateBookInput {
     private String title;
-    private int pagesNumber;
+    private int pages;
 }

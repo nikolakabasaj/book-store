@@ -14,3 +14,13 @@ type Mutation {
 
     saveAuthor(createAuthorInput: CreateAuthorInput!): Author!
 }
+type Subscription {
+    updateBookRating(updateBookRatingInput: UpdateBookRatingInput!): Book!
+    findAllBooks: [Book]!
+}
+
+schema {
+    query: Query
+    mutation: Mutation
+    subscription: Subscription
+}

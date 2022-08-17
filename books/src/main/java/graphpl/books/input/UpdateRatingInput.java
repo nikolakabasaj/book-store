@@ -3,7 +3,7 @@ package graphpl.books.input;
 import lombok.Data;
 
 @Data
-public class UpdateBookPageCountInput {
+public class UpdateRatingInput {
     private Long id;
-    private int pages;
+    private int rating;
 }

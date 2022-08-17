@@ -1,10 +1,10 @@
 package graphpl.books.resolver;
 
+import com.coxautodev.graphql.tools.GraphQLResolver;
 import graphpl.books.exception.AuthorNotFoundException;
 import graphpl.books.model.Author;
 import graphpl.books.model.Book;
 import graphpl.books.repository.AuthorRepository;
-import graphql.kickstart.tools.GraphQLResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
